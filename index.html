@@ -145,6 +145,34 @@
     document.addEventListener('keydown', tryPlay);
   });
 </script>
+
+<script>
+
+(function() {
+  var konami = [
+    "ArrowUp", "ArrowUp",
+    "ArrowDown", "ArrowDown",
+    "ArrowLeft", "ArrowRight",
+    "ArrowLeft", "ArrowRight",
+    "b", "a", "Enter"
+  ];
+  var position = 0;
+  window.addEventListener("keydown", function(e) {
+  
+    var key = e.key;
+    if (key.length === 1) key = key.toLowerCase();
+    if (key === konami[position]) {
+      position++;
+      if (position === konami.length) {
+        window.location.href = "rare.html";
+        position = 0;
+      }
+    } else {
+      position = 0;
+    }
+  });
+})();
+</script>
     
 </body>
 </html>
