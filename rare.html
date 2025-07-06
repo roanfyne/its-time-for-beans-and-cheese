@@ -1,25 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rare</title>
+  <style>
+    body {
+      background: #000 !important;
+      color: #fff !important;
+    }
+    #secret-btn-container {
+      display: none;
+      justify-content: center;
+    }
+    #secret-btn {
+      font-size: 1.2em;
+      padding: 10px 24px;
+      cursor: pointer;
+      background-color: #da1a32;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
 wow. you got this from someone probabaly. i only gave this secret to a few people, wowe.
 
 <div style="height:200px;"></div>
-
 
 this probabaly isnt anything....
 
 <!-- Tall spacer to force scrolling -->
 <div style="height:20000px;"></div>
 
-<div style="display: flex; justify-content: center;">
-<a href="favicon.png">
-  <button style="font-size:1.2em;padding:10px 24px;cursor:pointer;
-    background-color:#da1a32;color:#fff;border:none;border-radius:6px;">
-   : )
-  </button>
-</a>
+<div id="secret-btn-container">
+  <a href="favicon.png">
+    <button id="secret-btn">: )</button>
+  </a>
+</div>
 
 <div style="height:100px;"></div>
-<style>
-  body {
-    background: #000 !important;
-    color: #fff !important;
-  }
-</style>
+
+<script>
+function isMobile() {
+  // Basic check for mobile devices
+  return /Mobi|Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent);
+}
+
+const btnContainer = document.getElementById("secret-btn-container");
+
+if (isMobile()) {
+  btnContainer.style.display = "flex";
+} else {
+  let sequence = [];
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      sequence.push(e.key);
+      if (sequence.length > 2) sequence.shift();
+      if (sequence[0] === 'ArrowLeft' && sequence[1] === 'ArrowRight') {
+        btnContainer.style.display = "flex";
+      }
+    } else {
+      sequence = [];
+    }
+  });
+}
+</script>
+</body>
+</html>
