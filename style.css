@@ -1,15 +1,16 @@
 :root {
     --primary-color: #fc2651;
-    --text-color: #333;
-    --background-color: #FFFFFF;
-    --card-bg: #f8f8f8;
-    --card-border: #e0e0e0;
-    --shadow: rgba(0, 0, 0, 0.1);
-    --popup-bg: #fff;
+    --text-color: #e0e0e0;
+    --background-color: #181818;
+    --card-bg: #252525;
+    --card-border: #383838;
+    --shadow: rgba(0, 0, 0, 0.4);
+    --popup-bg: #252525;
+}
 }
 
 .dark-mode {
-    --primary-color: #fc2651;
+    --primary-color: #39FF14;
     --text-color: #e0e0e0;
     --background-color: #181818;
     --card-bg: #252525;
@@ -346,4 +347,5 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
     margin-top: 1rem;
+
 }
