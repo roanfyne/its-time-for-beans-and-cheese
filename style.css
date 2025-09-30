@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #fc2651;
+    --primary-color: #39FF14;
     --text-color: #e0e0e0;
     --background-color: #181818;
     --card-bg: #252525;
@@ -10,7 +10,7 @@
 }
 
 .dark-mode {
-    --primary-color: #39FF14;
+    --primary-color: #fc2651;
     --text-color: #e0e0e0;
     --background-color: #181818;
     --card-bg: #252525;
@@ -349,3 +349,4 @@ footer {
     margin-top: 1rem;
 
 }
+
