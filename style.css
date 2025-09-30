@@ -15,7 +15,7 @@
     --main-color: #39FF14;
     --text-color: #e0e0e0;
     --background-color: #181818;
-    --background: url(file:///home/chronos/u-95295e0b59f1f0d962f641495d0f93c68c424951/MyFiles/Downloads/Untitled%20(1517%20x%20852%20px).png);
+    --background: bg.pdf;
     --card-bg: #252525;
     --card-border: #383838;
     --shadow: rgba(0, 0, 0, 0.4);
@@ -352,6 +352,7 @@ footer {
     margin-top: 1rem;
 
 }
+
 
 
 
