@@ -371,7 +371,7 @@ settings.addEventListener('click', () => {
     document.getElementById('popupTitle').textContent = "Settings";
     const popupBody = document.getElementById('popupBody');
     popupBody.innerHTML = `
-    <button id="settings-button" onclick="darkMode()">Toggle Red Mode</button>
+    <button id="settings-button" onclick="darkMode()">Toggle Background</button>
     <br><br>
     <button id="settings-button" onclick="tabCloak()">Tab Cloak</button>
     <br>
@@ -462,3 +462,4 @@ HTMLCanvasElement.prototype.toDataURL = function (...args) {
     return "";
 
 };
+
